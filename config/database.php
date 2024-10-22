@@ -66,8 +66,8 @@ return [
         'enrollment' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('ENROLL_DB_HOST', '122.54.70.5'),
-            'port' => env('ENROLL_DB_PORT', '8081'),
+            'host' => env('ENROLL_DB_HOST', '127.0.0.1'),
+            'port' => env('ENROLL_DB_PORT', '3306'),
             'database' => env('ENROLL_DB_DATABASE', 'forge'),
             'username' => env('ENROLL_DB_USERNAME', 'forge'),
             'password' => env('ENROLL_DB_PASSWORD', ''),
@@ -86,8 +86,8 @@ return [
         'schedule' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('SCHED_DB_HOST', '122.54.70.5'),
-            'port' => env('SCHED_DB_PORT', '8081'),
+            'host' => env('SCHED_DB_HOST', '127.0.0.1'),
+            'port' => env('SCHED_DB_PORT', '3306'),
             'database' => env('SCHED_DB_DATABASE', 'forge'),
             'username' => env('SCHED_DB_USERNAME', 'forge'),
             'password' => env('SCHED_DB_PASSWORD', ''),
@@ -106,8 +106,8 @@ return [
         'settings' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('SET_DB_HOST', '122.54.70.5'),
-            'port' => env('SET_DB_PORT', '8081'),
+            'host' => env('SET_DB_HOST', '127.0.0.1'),
+            'port' => env('SET_DB_PORT', '3306'),
             'database' => env('SET_DB_DATABASE', 'forge'),
             'username' => env('SET_DB_USERNAME', 'forge'),
             'password' => env('SET_DB_PASSWORD', ''),
