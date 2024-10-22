@@ -36,7 +36,7 @@ class ClassroomController extends Controller
 {
     public function studsemester()
     {
-        $progen = StudEnrolmentHistory::join('coasv2_db_schedule.programs', 'program_en_history.progCod', '=', 'coasv2_db_schedule.programs.progCod')
+        $progen = StudEnrolmentHistory::join(DB::connection('schedule')->getDatabaseName() . '.programs', 'program_en_history.progCod', '=', 'coasv2_db_schedule.programs.progCod')
                     ->where('studentID', '=', Auth::guard('web')->user()->studenID)
                     ->select('program_en_history.*', 'program_en_history.id as progenid', 'coasv2_db_schedule.programs.progAcronym')
                     ->groupBy('schlyear', 'semester', 'campus')
